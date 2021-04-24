@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FinanceProcess</string>
+    <string name="enter_user_name">Enter User Name.</string>
+    <string name="password">Enter Password</string>
+    <string name="re_password">Re-Enter Password</string>
+
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+
+    <string name="new_user">New User?</string>
+    <string name="list_row_username">Name:</string>
+    <string name="list_user_mobile">Mobile:</string>
+    <string name="balance_text">Balance: ₹</string>
+    <string name="bts">BTS: $</string>
+    <string name="electivity_no">Consumer Id</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="name">Name</string>
+    <string name="enter_duedate">Due Date</string>
+    <string name="btn_text_plans">Plans</string>
+    <string name="btn_text_transfer">Transfer</string>
+    <string name="transferID">Customer ID</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="complaintTypeString">ComplainType</string>
+    <string name="remarks">Remarks</string>
+    <string name="amount">Amount</string>
+    <string name="transfer_to">TransferTo</string>
+    <string name="firm_name">Firm Name</string>
+    <string name="complain_no">Complain No.</string>
+    <string name="subject">Subject </string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="complain_text">Complain</string>
+
+</resources>

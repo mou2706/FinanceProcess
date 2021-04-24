@@ -1,0 +1,95 @@
+<resources>
+
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <!--
+        <item name="android:background">@color/black_overlay</item>
+-->
+    </style>
+
+    <!--style for ripple library-->
+
+    <color name="customColorAccent">#c7baaf3a</color>
+    <color name="black_overlay">#000000</color>
+
+    <!--TextBoxDashGridStyle-->
+    <style name="TextBoxDashGridStyle">
+        <item name="android:textColor">@color/black_overlay</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+        <!--<item name="android:layout_marginTop">@dimen/margin_4dp</item>-->
+    </style>
+    <!--TextDashGridStyle-->
+
+    <!--Margin image dash grid style-->
+    <style name="MarginImageViewDashStyle">
+        <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_8dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_8dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+        <item name="android:layout_width">@dimen/dash_main_iconwidthnhight</item>
+        <item name="android:layout_height">@dimen/dash_main_iconwidthnhight</item>
+    </style>
+
+    <!--Margin image floating grid style-->
+    <style name="MarginImageViewFloatingStyle">
+        <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_8dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_8dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+        <item name="android:layout_width">@dimen/floating_main_iconwidthnhight</item>
+        <item name="android:layout_height">@dimen/floating_main_iconwidthnhight</item>
+    </style>
+
+    <!--Text Small 12sp with black back and bold-->
+    <style name="TextSmallBlackBold">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/black_overlay</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Text Small 12sp with black back and bold-->
+    <style name="TextSmallSansMedium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <!--Text Medium-->
+
+    <!--Text Large-->
+
+    <style name="CustomBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="MyStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FFFF</item>
+        <item name="tabIndicatorHeight">5dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+    </style>
+
+
+
+    <dimen name="margin_16dp">16dp</dimen>
+</resources>

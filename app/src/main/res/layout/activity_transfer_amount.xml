@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transfer_amount">
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/bg_app_all"
+            android:id="@+id/layout_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/customer_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/electivity_no"
+                android:inputType="number"
+                android:maxLength="11"
+                android:gravity="center"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/mobile_no"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="@string/mobilenumber"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/customer_id" />
+
+            <TextView
+                android:id="@+id/electricity_recharge_et_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLength="40"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_no" />
+            <TextView
+                android:id="@+id/electricity_recharge_et_duedate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="@string/enter_duedate"
+                android:inputType="text"
+                android:text="@string/enter_duedate"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricity_recharge_et_name" />
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="customer_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/beneficiary"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Choose Beneficiary"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricity_recharge_et_duedate" />
+
+            <ImageView
+                android:id="@+id/iv_operator"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitXY"
+
+                app:layout_constraintBottom_toBottomOf="@+id/beneficiary"
+                app:layout_constraintStart_toStartOf="@+id/beneficiary"
+                app:layout_constraintTop_toTopOf="@+id/beneficiary" />
+            <ImageView
+                android:id="@+id/iv_select_operator"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/drawable_left"
+                app:layout_constraintBottom_toBottomOf="@+id/beneficiary"
+                app:layout_constraintEnd_toEndOf="@+id/beneficiary"
+                app:layout_constraintTop_toTopOf="@+id/beneficiary" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/electricity_recharge_et_amt"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintEnd_toStartOf="@+id/electricity_recharge_btn_plans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beneficiary" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:srcCompat="@drawable/ic_indian_rupee"
+                app:layout_constraintBottom_toBottomOf="@+id/electricity_recharge_et_amt"
+                app:layout_constraintStart_toStartOf="@+id/electricity_recharge_et_amt"
+                app:layout_constraintTop_toTopOf="@+id/electricity_recharge_et_amt"
+                tools:ignore="VectorDrawableCompat" />
+
+            <Button
+                android:id="@+id/electricity_recharge_btn_plans"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/btn_text_plans"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/electricity_recharge_et_amt"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btn_transfer_amount"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_shape_disabled"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/btn_text_transfer"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_medium"
+                android:enabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <EditText
+                android:id="@+id/et_amt"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape_recharge_screen"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="Enter Amount"
+                android:inputType="phone"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintBottom_toTopOf="@+id/btn_transfer_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricity_recharge_et_amt"
+                />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:srcCompat="@drawable/ic_indian_rupee"
+                app:layout_constraintBottom_toBottomOf="@+id/et_amt"
+                app:layout_constraintStart_toStartOf="@+id/et_amt"
+                app:layout_constraintTop_toTopOf="@+id/et_amt"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/electricity_recharge_tv_available_balance"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Wait For Balance Update"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintBottom_toTopOf="@+id/btn_transfer_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricity_recharge_et_amt"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/customer_id"
+                app:layout_constraintStart_toStartOf="@+id/customer_id"
+                app:layout_constraintTop_toTopOf="@+id/customer_id"
+                app:srcCompat="@drawable/ic_electricity"
+                android:layout_marginLeft="8dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mobile_no"
+                app:layout_constraintStart_toStartOf="@+id/mobile_no"
+                app:layout_constraintTop_toTopOf="@+id/mobile_no"
+                app:srcCompat="@drawable/ic_mobile"
+                android:layout_marginLeft="8dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageView8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/electricity_recharge_et_name"
+                app:layout_constraintStart_toStartOf="@+id/electricity_recharge_et_name"
+                app:layout_constraintTop_toTopOf="@+id/electricity_recharge_et_name"
+                app:srcCompat="@drawable/ic_editprofile"
+                android:layout_marginLeft="8dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageView9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/electricity_recharge_et_duedate"
+                app:layout_constraintStart_toStartOf="@+id/electricity_recharge_et_duedate"
+                app:layout_constraintTop_toTopOf="@+id/electricity_recharge_et_duedate"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                android:layout_marginLeft="8dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/list_complain_no_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="@string/complain_no"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/complain_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="17"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_complain_no_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_mono_regular"
+        android:text="04 Mar 2018"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_complain_no_text"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_mono_regular"
+        android:text="03:15 am"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_complain_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:id="@+id/list_complain_status_logo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:srcCompat="@drawable/tick"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_type_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/complaintTypeString"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_complain_time"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/complaintTypeString"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_complain_type_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_subject_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/subject"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_complain_type"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain_subject"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/subject"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_complain_subject_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/list_complain_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/complain_text"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_complain_subject"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_complain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/complain_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_complain_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/list_firmname_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/firm_name"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_complain"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_firmname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/firm_name"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_firmname_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/list_firmname_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/list_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Mousumi Majumdr"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_firmname"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/list_phonenumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="9903712171"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/list_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/list_username"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
